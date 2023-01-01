@@ -1,0 +1,38 @@
+
+<div class="container mt-5 mb-5 ">
+ 
+
+
+<div style="margin: auto;" class=" mt-4  col-9 col-sm-4 col-xl-8 bg-success">
+  
+ <div class="b1">
+  <p class="bg-warning primary">{{time |date: 'fullDate'}}</p>
+  <p class="bg-warning">{{time |date: 'shortTime'}}</p>
+
+
+    <nav class="navbar navbar-light">
+        <form class="form-inline">
+          <input name="search"(keyup)="search($event)"  class="form-control mr-2 border-dark" autocomplete="off"  spellcheck="false"  type="search" placeholder="Search By Location" aria-label="Search">
+        </form>
+      </nav>
+      
+      <div >
+        <h4> 
+            {{weather.name}}
+        </h4>
+        
+        <h1 id="c1" class="display-1 text-white">{{temperature}}&#8451;</h1>
+      
+        <img src="https://openweathermap.org/img/wn/{{icon[0].icon}}@2x.png" alt="">
+        
+        <h4 class="display-5 text-white">{{icon[0].description}}</h4>
+       
+
+      </div>
+
+
+</div>
+
+
+</div>
+</div>
